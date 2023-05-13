@@ -38,7 +38,7 @@ Build system - Maven
 
 clone the repository in your local system
 ```python
-git clone https://github.com/Adii-knolder/Gatling-Assignment.git
+git clone https://github.com/Adii-knolder/Gatling-Assignment-Maven.git
 ```
 
 Navigate to project root directory
