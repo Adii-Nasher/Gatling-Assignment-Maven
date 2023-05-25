@@ -1,6 +1,6 @@
 package Simulation
 
-import UserScenario.chainedScenario
+import Scenario.chainedScenario
 import io.gatling.core.Predef._
 import scala.concurrent.duration._
 
