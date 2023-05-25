@@ -2,7 +2,7 @@ import httpRequests._
 import io.gatling.core.Predef._
 import io.gatling.core.structure.ScenarioBuilder
 
-package object UserScenario {
+package object Scenario {
 
   val feeder = csv("src/user_data.csv").random
 

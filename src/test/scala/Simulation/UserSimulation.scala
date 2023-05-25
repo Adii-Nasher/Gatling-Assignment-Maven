@@ -6,18 +6,18 @@ import scala.concurrent.duration._
 
 class UserSimulation extends Simulation {
 
-  val onceUser : Int = Integer.getInteger("forAtOnceUsers")
+  val onceUser : Int = Integer.getInteger("forAtOnceUsers",50)
 
   val constantUser : Double = System.getProperty("forConstantUsers") match {
-    case null => 1.0
+    case null => 20
     case str => java.lang.Double.parseDouble(str)
   }
 
-  val constantTime  = java.lang.Long.getLong("sec",0)
+  val constantTime  = java.lang.Long.getLong("sec",15)
 
-  val rampUser : Int = Integer.getInteger("forRampUpUsers", 1)
+  val rampUser : Int = Integer.getInteger("forRampUpUsers", 100)
 
-  val myRamp  = java.lang.Long.getLong("ramp", 0)
+  val myRamp  = java.lang.Long.getLong("ramp", 30)
 
     setUp(
       chainedScenario.inject(
